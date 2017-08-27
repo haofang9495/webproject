@@ -1,0 +1,17 @@
+<service name="HelloWorld">  
+    <description>  
+        HelloWorld Service Example
+    </description>  
+    <parameter name="ServiceClass">  
+        com.pom.service.HelloWorld
+    </parameter>  
+    <operation name="sayHello">  
+        <messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" />  
+    </operation>  
+    <operation name="saySorry">  
+        <messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" />  
+    </operation>  
+    <operation name="getWorld">  
+        <messageReceiver class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver" />  
+    </operation>  
+</service>

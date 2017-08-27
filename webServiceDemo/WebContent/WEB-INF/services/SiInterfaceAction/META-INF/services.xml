@@ -1,0 +1,11 @@
+<service name="SiInterfaceAction">  
+    <description>  
+        SiInterfaceAction Service Example
+    </description>  
+    <parameter name="ServiceClass">  
+        com.pom.service.SiInterfaceAction
+    </parameter>  
+    <operation name="siInterface">  
+        <messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" />  
+    </operation>  
+</service>
